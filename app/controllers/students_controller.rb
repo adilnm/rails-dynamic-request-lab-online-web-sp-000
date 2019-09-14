@@ -1,4 +1,3 @@
-require 'pry'
 
 class StudentsController < ApplicationController
   def index
@@ -6,7 +5,6 @@ class StudentsController < ApplicationController
   end
 
   def show
-    binding.pry
     @student=Student.find(params[:id])
   end
 end
